@@ -982,6 +982,16 @@ const definitions: DefinitionWithExtend[] = [
             return {default: 32};
         },
     },
+    {
+        zigbeeModel: ['EMIZB-151'],
+        model: 'EMIZB-151',
+        vendor: 'Develco',
+        description: 'P1 HAN power-meter sensor',
+        whiteLabel: [{vendor: 'Frient', model: 'EMIZB-151'}],
+        extend: [
+            electricityMeter({acFrequency: false, threePhase: true}),
+        ],
+    },
 ];
 
 export default definitions;
